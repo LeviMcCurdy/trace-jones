@@ -15,9 +15,11 @@
     </title>
     <meta name="viewport" content="width=device-width">
     
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
+    
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/normalize.min.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
     
     <!--[if lt IE 9]>
     <script src="<?php bloginfo('template_url'); ?>/js/html5-3.6-respond-1.1.0.min.js"></script>
@@ -32,10 +34,27 @@
 	<![endif]-->
     
     <header role="banner">
+
+        <div class="left-head">
+        <p class="call">Give Us A Call <br><span>(610)286-7834</span></p>
+        </div>
+
+        <div class="right-head">
+        <p class="call">Auctioneer License<br><span>#AU-3607-L</span></p>
+        </div>
+
     
         <div class="wrap">
+        <div class="logo">
+        <img src="http://localhost:8888/trace-jones/wp-content/uploads/2015/03/jones-logo.jpg" alt="Tracey L. Jones Auctions LLC" class="logo-image">
+        </div>
+        </div>
+
+
+
             
             <nav role="navigation">
+            <div class="wrap">
         
                 <!-- menu with list elements -->
                 <?php /* wp_nav_menu( array( 'theme_location' => 'mainmenu' ) ); */ ?>
@@ -51,7 +70,7 @@
                 'depth'           => 0
                 ); 
                 echo strip_tags(wp_nav_menu( $defaults ), '<a>');?>
-            
+            </div>
             </nav>
             
             <div class="mobile-nav">
@@ -60,7 +79,7 @@
                     <p>Menu <span>☰</span></p>
                 </div>
     
-                <nav class="mobile__nav">
+                <nav class="mobile__nav" style="display:none;">
                     <?php $defaults = array( 
                     'theme_location' => 'mainmenu',
                     'container'       => 'nav', 
@@ -74,6 +93,6 @@
                 </nav>
             </div>
             
-        </div>
+      
     
     </header>

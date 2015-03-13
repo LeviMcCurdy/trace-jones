@@ -405,12 +405,128 @@ textarea {
 /*! Partials
 //////////////////////////////////////////////*/
 
+body {
+  background-color: #e2e2e2;
+}
+
+.logo {
+  text-align: center;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
 
 header[role=banner] {
-   }
+  border-top: 6px solid #7b1315;
+  z-index: 2;
+  position: relative;
+  background-color: #fff;
+}
 
 nav[role=navigation] {
-   }
+  background-color: #7b1315;
+  top: 30px;
+  position: relative;
+  text-align: center;
+  border-bottom: 4px solid #fff;
+}
+
+nav a {
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Droid Sans', sans-serif;
+  background-color: #7b1315;
+  transition:all 0.5s ease-in-out;
+}
+
+nav a:hover {
+background-color: #fff;
+color: #7b1315;
+}
+
+
+
+.left-head, .right-head {
+  background-color: #ececec;
+  position: absolute;
+    top: 40px;
+  text-align: center;
+  padding: 15px 200px 15px 40px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 23px;
+}
+
+.left-head span, .right-head span {
+  color: #555555;
+}
+
+.left-head {
+  left: 0;
+}
+
+.right-head {
+  right: 0;
+}
+
+.left-head p {
+  display: inline-block;
+  position: relative;
+  left: 165px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.first-block {
+  background-color: #fff;
+  border-top: 6px solid #7b1315;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  z-index: 4;
+  position: relative;
+  top: -50px;
+}
+
+
+h1 {
+  color: #7b1315;
+    font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+
+}
+
+h2 {
+  color: #333333;
+  font-family: 'Oswald', sans-serif;
+  font-size: 23px;
+  padding-bottom: 20px;
+}
+
+
+.introduction {
+  padding-left: 30px;
+  padding-right: 130px;
+  background-image: url('http://localhost:8888/trace-jones/wp-content/uploads/2015/03/line.png');
+  background-repeat: no-repeat;
+  background-position: 750px center;
+}
+
+a {
+  color: #790000;
+}
+
+p {
+   font-family: 'Droid Sans', sans-serif;
+   padding-top: 10px;
+   padding-bottom: 10px; 
+}
 
 
 /*! Footer
@@ -420,6 +536,42 @@ nav[role=navigation] {
 footer[role=contentinfo] {
   }
  
+
+
+
+
+ .rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
 
 /*!////////////////////////////////////////////////
 // STATES
