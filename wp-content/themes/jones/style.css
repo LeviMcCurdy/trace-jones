@@ -510,6 +510,14 @@ h2 {
 }
 
 
+h3 {
+  color: #333333;
+  font-family: 'Oswald', sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .introduction {
   padding-left: 30px;
   padding-right: 130px;
@@ -520,22 +528,247 @@ h2 {
 
 a {
   color: #790000;
+  font-weight: 700;
 }
 
 p {
    font-family: 'Droid Sans', sans-serif;
    padding-top: 10px;
    padding-bottom: 10px; 
+   font-weight: 700;
 }
 
+ul {
+  font-family: 'Droid Sans', sans-serif;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  list-style: none;
+  font-weight: 700;
+}
+
+ul li:before {
+  content: '\f058';
+  font-family: FontAwesome;
+  display: inline-block;
+  width: 1.2em;
+  margin-left: -1.2em;
+  color: #555555;
+}
+
+.upcoming-auctions-button {
+  color: #1d514e;
+  font-family: 'Oswald', sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #1d514e;
+  padding: 12px;
+  position: relative;
+  padding-left: 45px;
+  top: 30px;
+  background-color: #fff;
+  transition:all 0.5s ease-in-out;
+}
+
+
+.upcoming-auctions-button:hover {
+  color: #fff;
+  background-color: #1d514e;
+}
+
+
+.upcoming-auctions-button:before {
+  position: absolute;
+  font-family: FontAwesome;
+  content: '\f0e3';
+   height: 52px;
+  width: 40px;
+  background-color: #1d514e;
+  margin-top: -13px;
+  margin-left: -45px;
+  color: #fff;
+  padding-top: 15px;
+  padding-left: 10px;
+
+}
+
+
+
+
+.auction-archive-button {
+  color: #7b1315;
+  font-family: 'Oswald', sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #7b1315;
+  padding: 12px;
+  position: relative;
+  padding-left: 45px;
+  top: 30px;
+  margin-left: 50px;
+    background-color: #fff;
+  transition:all 0.5s ease-in-out;
+}
+
+.auction-archive-button:before {
+  position: absolute;
+  font-family: FontAwesome;
+  content: '\f0e3';
+  height: 52px;
+  width: 40px;
+  background-color: #7b1315;
+  margin-top: -13px;
+  margin-left: -45px;
+  color: #fff;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.auction-archive-button:hover {
+  color: #fff;
+  background-color: #7b1315;
+}
+
+.second-block {
+  margin-top: -30px;
+}
+
+.third-block {
+  margin-top: 20px;
+}
+
+.contain {
+  overflow: hidden;
+}
+
+.equal-block {
+  background-color: #fff;
+  padding-bottom: 530px !important;
+  margin-bottom: -520px !important;
+}
+
+.house {
+  background-image: url('http://localhost:8888/trace-jones/wp-content/uploads/2015/03/IMG_3909.jpg');
+  background-size: cover;
+}
+
+h4 {
+  color: #7b1315;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+.the-inside-div {
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 100px;
+}
+
+h4 {
+  color: #7b1315;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+
+p.email-sign-up {
+  background-color: #333333;
+  color: #fff;
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+
+.sign-up-form {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+
+.email-only input[type="email"] {
+  width: 100%;
+  padding-left: 20px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #1d514e;
+}
+
+input[type="submit"] {
+  background-color: #1d514e;
+  border: 2px solid #1d514e;
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition:all 0.5s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: #1d514e;
+}
+
+.registered {
+  background-image: url('http://localhost:8888/trace-jones/wp-content/uploads/2015/03/Amanda-Shirk-0111.jpg');
+  background-size: cover;
+  text-align: center;
+}
+
+.paaa {
+  color: #fff;
+  max-width: 740px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+img.logo-paas {
+  height: auto;
+  width: 200px;
+}
 
 /*! Footer
 //////////////////////////////////////////////*/
 
 
 footer[role=contentinfo] {
+  background-color: #7b1315;
+  border-top: 6px solid #fff;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  }
+
+  .footer-left {
+    text-align: left;
+  }
+
+  .footer-right {
+    text-align: right;
+  }
+
+  footer p {
+    font-weight: 300;
   }
  
+
+ footer i {
+  font-size: 20px !important;
+  margin-left: 20px;
+}
 
 
 
@@ -650,3 +883,505 @@ footer[role=contentinfo] {
 .alignleft { float:left; margin-right:30px; margin-bottom:30px; }
 
 .alignright { float:right; margin-left:30px; margin-bottom:30px; }
+
+
+.sub-page p {
+  font-family: 'Droid Sans', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+
+.sub-page .upcoming-auctions-button {
+  color: #1d514e;
+  font-family: 'Oswald', sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #1d514e;
+  padding: 12px;
+  position: relative;
+  padding-left: 45px;
+  top: 30px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  display: block;
+  width: 75%;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+
+
+
+.sub-page .auction-archive-button {
+  color: #7b1315;
+  font-family: 'Oswald', sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #7b1315;
+  padding: 12px;
+  position: relative;
+  padding-left: 45px;
+  top: 30px;
+  margin-left: 50px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  display: block;
+  width: 75%;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+
+.sub-page .upcoming-auctions-button:hover {
+  color: #fff;
+  background-color: #1d514e;
+}
+.sub-page .auction-archive-button:hover {
+  color: #fff;
+  background-color: #7b1315;
+}
+
+.sub-page .first-block {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+
+.auction-image {
+  overflow: hidden;
+}
+
+.auction-image img {
+  width: 100%;
+}
+
+.auction-content {
+  background-color: #fff;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 37px;
+}
+
+
+.auction-button {
+  color: #1d514e;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-align: center;
+  border: 2px solid #1d514e;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  margin-top: 20px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+  transition: all 0.5s ease;
+  background-color: transparent;
+}
+
+.auction-button:hover {
+  background-color: #1d514e;
+  color: #fff;
+}
+
+.auction-button:nth-of-type(2) {
+  margin-left: 20px;
+}
+
+.auction-button:nth-of-type(3) {
+  margin-left: 20px;
+}
+
+
+p.auction-date {
+  color: #424242;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  margin-bottom: -20px;
+  font-size: 20px;
+}
+
+
+p.auction-address {
+    color: #7b1315;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.sub-page li {
+  padding-bottom: 20px;
+}
+
+.videoWrapper {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 25px;
+height: 0;
+margin-bottom: 40px;
+}
+
+.videoWrapper iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.left {
+  padding-left: 30px;
+  padding-top: 40px;
+}
+
+.sub-page input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+
+.sub-page textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+
+@media only screen and (max-width: 1200px)  {
+
+.left-head, .right-head {
+  padding: 15px 20px 15px 40px;
+}
+
+
+.left-head p {
+  left: 0;
+}
+
+.sub-page .upcoming-auctions-button {
+  color: #1d514e;
+  font-family: 'Oswald', sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #1d514e;
+  padding: 12px;
+  position: relative;
+  padding-left: 45px;
+  top: 30px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  display: block;
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+.sub-page .auction-archive-button {
+  color: #7b1315;
+  font-family: 'Oswald', sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #7b1315;
+  padding: 12px;
+  position: relative;
+  padding-left: 45px;
+  top: 30px;
+  margin-left: 50px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  display: block;
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 965px)  {
+
+.introduction {
+  padding-left: 30px;
+  padding-right: 20px;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: 750px center;
+}
+
+
+.first-block {
+  background-color: #fff;
+  border-top: 6px solid #7b1315;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  z-index: 4;
+  position: relative;
+  top: -50px;
+}
+
+.paaa {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+nav a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+}
+
+@media only screen and (max-width: 890px)  {
+
+  .left-head, .right-head {
+  background-color: #ececec;
+  position: relative;
+  top: 0;
+  text-align: center;
+    padding: 0px 0px 10px 0px; 
+  font-family: 'Oswald', sans-serif;
+  font-size: 17px;
+}
+
+
+nav[role=navigation] {
+  display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .mobile-nav a {
+    display: block;
+    text-align: center;
+  }
+
+  .mobile__button {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+  }
+
+
+
+
+@media only screen and (max-width: 800px)  {
+
+.grid-4, .grid-2 {
+  width: 100%;
+}
+
+.grid-4.introduction {
+  padding-bottom: 90px;
+}
+
+.grid-half {
+  width: 100%;
+}
+
+.equal-block {
+  background-color: #fff;
+  padding-bottom: 530px !important;
+  margin-bottom: -610px !important;
+}
+
+.registered {
+  background-image: url('http://localhost:8888/trace-jones/wp-content/uploads/2015/03/Amanda-Shirk-0111.jpg');
+  background-size: cover;
+  text-align: center;
+  margin-top: 150px;
+}
+
+img.logo-paas {
+  height: auto;
+  width: 200px;
+  padding-bottom: 100px;
+}
+
+
+.sub-page .first-block {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.grid-3 {
+  width: 100%;
+}
+
+
+.sub-page .upcoming-auctions-button {
+  color: #1d514e;
+  font-family: 'Oswald', sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #1d514e;
+  padding: 12px;
+  position: relative;
+  padding-left: 45px;
+  top: 30px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  display: block;
+  width: 95%;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+
+.sub-page .auction-archive-button {
+  color: #7b1315;
+  font-family: 'Oswald', sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #7b1315;
+  padding: 12px;
+  position: relative;
+  padding-left: 45px;
+  top: 30px;
+  margin-left: 50px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  display: block;
+  width: 95%;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+
+.auction-button {
+  color: #1d514e;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-align: center;
+  border: 2px solid #1d514e;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  margin-top: 20px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+  transition: all 0.5s ease;
+  background-color: transparent;
+  display: block;
+}
+
+.auction-button:nth-of-type(2) {
+  margin-left: 0px;
+}
+
+.auction-button:nth-of-type(3) {
+  margin-left: 0px;
+}
+
+}
+
+
+@media only screen and (max-width: 560px)  {
+
+.upcoming-auctions-button {
+  color: #1d514e;
+  font-family: 'Oswald', sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #1d514e;
+  padding: 12px;
+  position: relative;
+  padding-left: 45px;
+  top: 0;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  display: block;
+  width: 78%;
+    margin-top: 20px;
+}
+
+.auction-archive-button {
+  color: #7b1315;
+  font-family: 'Oswald', sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #7b1315;
+  padding: 12px;
+  position: relative;
+  padding-left: 45px;
+  top: 0;
+  margin-left: 0px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  display: block;
+  width: 78%;
+  margin-top: 20px;
+}
+
+.footer-right {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer-left {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+}
+
+
+@media only screen and (max-width: 479px)  {
+
+.the-inside-div {
+  padding-top: 120px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 100px;
+}
+
+.auction-content {
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 37px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
