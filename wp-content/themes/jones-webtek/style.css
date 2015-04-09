@@ -417,14 +417,14 @@ body {
 }
 
 header[role=banner] {
-  border-top: 6px solid #7b1315;
+  border-top: 6px solid #7b1216;
   z-index: 2;
   position: relative;
   background-color: #fff;
 }
 
 nav[role=navigation] {
-  background-color: #7b1315;
+  background-color: #7b1216;
   top: 30px;
   position: relative;
   text-align: center;
@@ -440,15 +440,27 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-family: 'Droid Sans', sans-serif;
-  background-color: #7b1315;
-  transition:all 0.5s ease-in-out;
+  background-color: #7b1216;
+  transition: all 0.5s ease-in-out;
+  font-size: 19px;
 }
 
 nav a:hover {
 background-color: #fff;
-color: #7b1315;
+color: #7b1216;
 }
 
+
+nav a:after {
+  content: '|';
+  position: absolute;
+  margin-left: 11px;
+  color: #610f11;
+}
+
+nav a:last-of-type:after {
+content: '';
+}
 
 
 .left-head, .right-head {
@@ -467,6 +479,10 @@ color: #7b1315;
 
 .left-head {
   left: 0;
+  background-image: url('http://f47.b2a.myftpupload.com/wp-content/uploads/2015/04/head-shot.png');
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: 90px center;
 }
 
 .right-head {
@@ -485,9 +501,9 @@ color: #7b1315;
 
 .first-block {
   background-color: #fff;
-  border-top: 6px solid #7b1315;
+  border-top: 6px solid #7b1216;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 90px;
   padding-left: 20px;
   z-index: 4;
   position: relative;
@@ -496,7 +512,7 @@ color: #7b1315;
 
 
 h1 {
-  color: #7b1315;
+  color: #7b1216;
     font-family: 'Oswald', sans-serif;
   font-size: 30px;
 
@@ -532,11 +548,27 @@ a {
 }
 
 p {
-   font-family: 'Droid Sans', sans-serif;
-   padding-top: 10px;
-   padding-bottom: 10px; 
-   font-weight: 700;
+  font-family: 'Droid Sans', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  color: #424242;
 }
+
+.paaa p {
+  color: #fff;
+
+  }
+
+
+  footer p {
+    color: #fff;
+  }
+
+footer a {
+  color: #fff; 
+}
+
 
 ul {
   font-family: 'Droid Sans', sans-serif;
@@ -578,30 +610,44 @@ ul li:before {
 
 
 .upcoming-auctions-button:before {
-  position: absolute;
-  font-family: FontAwesome;
-  content: '\f0e3';
-   height: 52px;
-  width: 40px;
   background-color: #1d514e;
-  margin-top: -13px;
-  margin-left: -45px;
-  color: #fff;
-  padding-top: 15px;
-  padding-left: 10px;
+  bottom: 0;
+    color: #fff;
+    content: "";
+    font-family: FontAwesome;
+    height: 100%;
+    left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    position: absolute;
 
 }
 
 
+.nounder {
+  text-decoration: none;
+  transition:all 0.5s ease;
+}
+
+.nounder:hover {
+  text-decoration: underline;
+}
+
+.gallery-auction {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 
 
 .auction-archive-button {
-  color: #7b1315;
+  color: #7b1216;
   font-family: 'Oswald', sans-serif;
   font-size: 19px;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid #7b1315;
+  border: 2px solid #7b1216;
   padding: 12px;
   position: relative;
   padding-left: 45px;
@@ -611,23 +657,23 @@ ul li:before {
   transition:all 0.5s ease-in-out;
 }
 
-.auction-archive-button:before {
-  position: absolute;
-  font-family: FontAwesome;
-  content: '\f0e3';
-  height: 52px;
-  width: 40px;
-  background-color: #7b1315;
-  margin-top: -13px;
-  margin-left: -45px;
-  color: #fff;
-  padding-top: 15px;
-  padding-left: 10px;
+.auction-archive-button::before {
+    background-color: #7b1216;
+    bottom: 0;
+    color: #fff;
+    content: "";
+    font-family: FontAwesome;
+    height: 100%;
+    left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    position: absolute;
 }
 
 .auction-archive-button:hover {
   color: #fff;
-  background-color: #7b1315;
+  background-color: #7b1216;
 }
 
 .second-block {
@@ -654,7 +700,7 @@ ul li:before {
 }
 
 h4 {
-  color: #7b1315;
+  color: #7b1216;
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
 }
@@ -667,7 +713,7 @@ h4 {
 }
 
 h4 {
-  color: #7b1315;
+  color: #7b1216;
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
   padding-bottom: 30px;
@@ -744,7 +790,7 @@ img.logo-paas {
 
 
 footer[role=contentinfo] {
-  background-color: #7b1315;
+  background-color: #7b1216;
   border-top: 6px solid #fff;
   color: #fff;
   padding-top: 20px;
@@ -805,6 +851,13 @@ footer[role=contentinfo] {
   width: 100%;
   border: 0;
   }
+
+  .auction-date span {
+  float: right;
+  font-weight: 400;
+  color: rgb(140, 140, 139);
+  font-size: 18px;
+}
 
 /*!////////////////////////////////////////////////
 // STATES
@@ -916,12 +969,12 @@ footer[role=contentinfo] {
 
 
 .sub-page .auction-archive-button {
-  color: #7b1315;
+  color: #7b1216;
   font-family: 'Oswald', sans-serif;
   font-size: 19px;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid #7b1315;
+  border: 2px solid #7b1216;
   padding: 12px;
   position: relative;
   padding-left: 45px;
@@ -942,7 +995,7 @@ footer[role=contentinfo] {
 }
 .sub-page .auction-archive-button:hover {
   color: #fff;
-  background-color: #7b1315;
+  background-color: #7b1216;
 }
 
 .sub-page .first-block {
@@ -1011,7 +1064,7 @@ p.auction-date {
 
 
 p.auction-address {
-    color: #7b1315;
+    color: #7b1216;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -1059,12 +1112,26 @@ height: 100%;
 @media only screen and (max-width: 1200px)  {
 
 .left-head, .right-head {
-  padding: 15px 20px 15px 40px;
+  padding: 15px 20px 15px 140px;
+    font-size: 15px;
+}
+
+.left-head {
+  left: 0;
+  background-image: url('http://f47.b2a.myftpupload.com/wp-content/uploads/2015/04/head-shot.png');
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: 50px center;
 }
 
 
 .left-head p {
   left: 0;
+}
+
+.right-head {
+  padding-left: 15px;
+  padding-right: 140px;
 }
 
 .sub-page .upcoming-auctions-button {
@@ -1087,12 +1154,12 @@ height: 100%;
 }
 
 .sub-page .auction-archive-button {
-  color: #7b1315;
+  color: #7b1216;
   font-family: 'Oswald', sans-serif;
   font-size: 19px;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid #7b1315;
+  border: 2px solid #7b1216;
   padding: 12px;
   position: relative;
   padding-left: 45px;
@@ -1106,6 +1173,48 @@ height: 100%;
   margin-top: 20px;
 }
 
+.logo {
+  text-align: center;
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+nav a {
+  font-size: 16px;
+}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 1050px)  {
+
+
+.auction-archive-button {
+    margin-left: 0px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.upcoming-auctions-button {
+    margin-left: 0px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+.left-head {
+  left: 0;
+  background-image: url('http://f47.b2a.myftpupload.com/wp-content/uploads/2015/04/head-shot.png');
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: 50px center;
+}
 
 }
 
@@ -1124,7 +1233,7 @@ height: 100%;
 
 .first-block {
   background-color: #fff;
-  border-top: 6px solid #7b1315;
+  border-top: 6px solid #7b1216;
   padding-top: 30px;
   padding-bottom: 80px;
   padding-left: 20px;
@@ -1142,6 +1251,14 @@ height: 100%;
 nav a {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.left-head {
+  left: 0;
+  background-image: url('http://f47.b2a.myftpupload.com/wp-content/uploads/2015/04/head-shot.png');
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: 50px center;
 }
 
 
@@ -1179,6 +1296,27 @@ nav[role=navigation] {
   margin-top: 20px;
   margin-bottom: 0px;
 }
+
+
+.right-head {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.rslides li:before {
+  content: '';
+}
+
+.left-head {
+  left: 0;
+  background-image: url('http://f47.b2a.myftpupload.com/wp-content/uploads/2015/04/head-shot.png');
+  background-repeat: no-repeat;
+  background-size: 55px;
+  background-position: center 10px;
+  padding-top: 60px;
+}
+
+
 
   }
 
@@ -1250,12 +1388,12 @@ img.logo-paas {
 
 
 .sub-page .auction-archive-button {
-  color: #7b1315;
+  color: #7b1216;
   font-family: 'Oswald', sans-serif;
   font-size: 19px;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid #7b1315;
+  border: 2px solid #7b1216;
   padding: 12px;
   position: relative;
   padding-left: 45px;
@@ -1322,12 +1460,12 @@ img.logo-paas {
 }
 
 .auction-archive-button {
-  color: #7b1315;
+  color: #7b1216;
   font-family: 'Oswald', sans-serif;
   font-size: 19px;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid #7b1315;
+  border: 2px solid #7b1216;
   padding: 12px;
   position: relative;
   padding-left: 45px;

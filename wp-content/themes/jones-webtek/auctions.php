@@ -67,11 +67,23 @@ echo '</div>';
 echo '<div class="auction-content grid-4">';
 echo '<p class="auction-date">';
 the_field('auction_date');
+
+$sold = get_post_meta($post->ID, 'sold_price', true);
+if ( $sold ) {
+echo '<span>Sold Price: $';
+the_field('sold_price');
+echo '</span>';
+} else {}
+
+
 echo '</p>';
 
 echo '<p class="auction-address">';
+echo '<a class="nounder" href="';
+the_permalink();
+echo '">';
 the_field('auction_address');
-echo '</p>';
+echo '</a></p>';
 
 
 echo '<p class="auction-description">';
@@ -99,6 +111,13 @@ the_field('video_auction');
 echo '" target="_blank">Video</a>';
 } else {}
 
+
+$gallery = get_post_meta($post->ID, 'auction_gallery', true);
+if ( $gallery ) {
+echo '<a class="auction-button" href="';
+the_permalink();
+echo '">Gallery</a>';
+} else {}
 
 
 echo '</div>';

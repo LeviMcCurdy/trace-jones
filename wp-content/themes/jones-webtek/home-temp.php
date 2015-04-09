@@ -9,14 +9,14 @@
 
 ?>
 <?php get_header(); ?>
-<?php if( have_rows('slider') ): ?>
+<?php if( have_rows('slide_show_home') ): ?>
 
 	<ul class="rslides">
 
-	<?php while( have_rows('slider') ): the_row(); 
+	<?php while( have_rows('slide_show_home') ): the_row(); 
 
 		// vars
-		$image = get_sub_field('image_slide');
+		$image = get_sub_field('slide_show_images_home');
 
 
 		?>
@@ -114,7 +114,7 @@
 
 <p>Enter your email address to receive our Free Auction Alerts sent right to your email inbox!</p>
 
-<form class="email-only">
+<form action="<?php bloginfo('template_url'); ?>/contact-proc.php" class="email-only" method="post" name="contact_us"> 
 
 <input type="email" name="email" placeholder="email@address.com" required/>
 <input type="submit" name="submit" value="Sign Up" />

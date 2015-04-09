@@ -23,11 +23,13 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 <?php if (is_page (18)) { ?>
 <div class="grid-2 left">
 
+<img src="http://f47.b2a.myftpupload.com/wp-content/uploads/2015/04/head-shot.png" alt="Tracey Jones Auction">
+
 <p><strong>Tracey L. Jones Auctioneers, Inc.</strong><br>
 P.O.Box 545, Morgantown, PA 19543</p>
 <p><strong>Phone:</strong> (610) 286-7834 <br>
 <strong>Mobile:</strong> (484) 332-5287</p>
-<p><strong>Email:</strong> tljauction@gmail.com</p>
+<p><strong>Email:</strong> tracey@tljonesauctioneers.com</p>
 
 
 <div class="videoWrapper">
